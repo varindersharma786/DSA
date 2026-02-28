@@ -71,4 +71,8 @@ let numbers=[1,2,3,4,5,6,7,8,9]
         return item>3
     })
 
-console.log(someFunction)
+    let everyFunction=numbers.every((item)=>{
+        return item>0
+    })
+
+console.log(everyFunction)
