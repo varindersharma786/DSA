@@ -82,5 +82,25 @@
 
 // <======================= Recursive Factorial  Sequence ===========================================>
 
+function RecursiveFactorial(n) {
+  if (n == 0) {
+    return 1;
+  }
+  return n * RecursiveFactorial(n - 1);
+}
 
+console.log(RecursiveFactorial(5));
 
+// <======================= Liner Search ===========================================>
+
+function searchByLinerSearch(num) {
+  let index = 0;
+  const arr1 = [15, 78, 15, 15, 5, 86, 52, 98, 45];
+  for (i = 0; i < arr1.length; i++) {
+    if (arr1[i] === num) {
+      return (index = i);
+    }
+  }
+  return index;
+}
+console.log(searchByLinerSearch(86));
